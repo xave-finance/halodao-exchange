@@ -1,0 +1,22 @@
+** Dynamically generated directories
+artifacts
+cache
+node_modules
+
+
+** Combine files
+.github
+
+** directory structure
+- contracts
+    - contracts
+    - docs
+    - hardhat
+    - scripts
+    - test
+    - CONTRIBUTING.md
+    - README.md
+- frontend
+    - package.json
+- hardhat.config.js
+- .env
