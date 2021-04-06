@@ -4,7 +4,9 @@
     "contracts-test": "cd ./contracts/hardhat && npx hardhat test",
     "deploy:kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deploy.js --network \"kovan\"",
     "deploy:halo-kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deployHalo.js --network \"kovan\"",
-    "deploy:onlyrewards-kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deployOnlyRewardsContract.js --network \"kovan\""
+    "deploy:onlyrewards-kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deployOnlyRewardsContract.js --network \"kovan\"",
+
+    "start": "cd ./frontend && yarn start"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.1",
