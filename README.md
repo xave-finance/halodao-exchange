@@ -1,3 +1,25 @@
+# Environment variables
+In repository root directory
+
+`.env`
+
+```
+INFURA_NETWORK_URL=
+MNEMONIC_SEED=
+
+REACT_APP_ALCHEMY_API_KEY=''
+REACT_APP_INFURA_API_KEY=''
+REACT_APP_PORTIS_ID=''
+REACT_APP_FORTMATIC_API_KEY=''
+REACT_APP_GOOGLE_ANALYTICS_ID=''
+
+REACT_APP_HALO_TOKEN_ADDRESS_KOVAN=
+REACT_APP_POOL_WETHDAI_ADDRESS_KOVAN=
+REACT_APP_HALO_REWARDS_ADDRESS_KOVAN=
+REACT_APP_HALO_REWARDS_ADDRESS=
+REACT_APP_HALOCHEST_ADDRESS=
+```
+
 # Halo Rewards Smart Contract
 ### Quick Start
 Install packages
@@ -165,17 +187,17 @@ An open source interface for HaloDAO -- a protocol for decentralized exchange of
 To access the HaloDAO Interface, visit [dev.app.halodao.com](https://dev.app.halodao.com).
 
 ## Development
-
+```
 ### Install Dependencies
-
-```bash
-yarn
+In frontend root directory
+```
+> yarn install
 ```
 
 ### Run
-
-```bash
-yarn start
+In repository root directory
+```
+> yarn start
 ```
 
 Note that the interface only works on **Kovan**.

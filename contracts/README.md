@@ -1,4 +1,4 @@
-### Halo Rewards Smart Contract
+# Halo Rewards Smart Contract
 ### Quick Start
 Install hardhat
 ```
