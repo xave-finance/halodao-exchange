@@ -187,15 +187,16 @@ An open source interface for HaloDAO -- a protocol for decentralized exchange of
 To access the HaloDAO Interface, visit [dev.app.halodao.com](https://dev.app.halodao.com).
 
 ## Development
-```
 ### Install Dependencies
 In frontend root directory
+
 ```
 > yarn install
 ```
 
 ### Run
 In repository root directory
+
 ```
 > yarn start
 ```
