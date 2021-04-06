@@ -1,7 +1,7 @@
 {
   "name": "hardhat-project",
   "scripts": {
-    "contracts-test": "cd ./contracts/hardhat && npx hardhat test",
+    "contracts-test": "cd ./contracts && npx hardhat test",
     "deploy:kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deploy.js --network \"kovan\"",
     "deploy:halo-kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deployHalo.js --network \"kovan\"",
     "deploy:onlyrewards-kovan": "cd ./contracts/hardhat && npx hardhat run ../scripts/deployOnlyRewardsContract.js --network \"kovan\"",
