@@ -1,6 +1,8 @@
 [submodule "halodao-interface"]
 	path = halodao-interface
 	url = git@github.com:HaloDAO/halodao-interface.git
+	branch = develop
 [submodule "halodao-rewards"]
 	path = halodao-rewards
 	url = git@github.com:HaloDAO/halo-rewards.git
+	branch = develop
