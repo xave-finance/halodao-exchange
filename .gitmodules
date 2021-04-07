@@ -1,0 +1,3 @@
+[submodule "halodao-interface"]
+	path = halodao-interface
+	url = git@github.com:HaloDAO/halodao-interface.git
