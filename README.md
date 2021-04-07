@@ -35,8 +35,6 @@ To update or fetch all submodules
 ```
 `git-remote.sh` script will setup your submodules origin and upstream remote urls
 
-**DO NOT** commit `.gitmodules` because the changes is only for your local development
-
 ## Submodule documentations
 ### HaloDAO Rewards Smart Contract
 [README.md](https://github.com/HaloDAO/halo-rewards/blob/develop/README.md)
