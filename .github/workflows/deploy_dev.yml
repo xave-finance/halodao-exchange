@@ -1,0 +1,28 @@
+name: Deploy dev
+
+on:
+  push:
+    branches:
+      - develop
+  # manual trigger
+  workflow_dispatch:
+
+jobs:
+  build_and_preview:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn && yarn build
+        env:
+          REACT_APP_HALO_TOKEN_ADDRESS_KOVAN: ${{ secrets.REACT_APP_HALO_TOKEN_ADDRESS_KOVAN }}
+          REACT_APP_HALO_REWARDS_ADDRESS_KOVAN: ${{ secrets.REACT_APP_HALO_REWARDS_ADDRESS_KOVAN }}
+          REACT_APP_BALANCER_POOL_URL: ${{ secrets.REACT_APP_BALANCER_POOL_URL }}
+          REACT_APP_BALANCER_SUBGRAPH_URL: ${{ secrets.REACT_APP_BALANCER_SUBGRAPH_URL }}
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HALO_DEV_EB31C }}'
+          projectId: halo-dev-eb31c
+          target: app
+          channelId: live
