@@ -35,6 +35,7 @@ https://stackoverflow.com/a/59364554
 > git submodule set-url halodao-interface [your halodao-interface forked repo]
 > git submodule set-url halodao-rewards [your halodao-interface forked repo]
 ```
+If successful, .gitmodules and submodules' origin remote urls will be changed to your forked repo
 
 ## Submodule documentations
 ### HaloDAO Rewards Smart Contract
