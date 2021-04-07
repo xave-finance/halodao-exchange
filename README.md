@@ -27,6 +27,15 @@ To update or fetch all submodules
 > git submodule update --remote
 ```
 
+To prevent from accidentally pushing directly to the upstream repo, run the following
+
+### PLEASE NOTE THAT `submodule set-url` WILL ONLY WORK ON Git 2.25*
+https://stackoverflow.com/a/59364554
+```
+> git submodule set-url halodao-interface [your halodao-interface forked repo]
+> git submodule set-url halodao-rewards [your halodao-interface forked repo]
+```
+
 Note that git will pull the submodules from the branches specified in .gitmodules
 
 ## Submodule documentations
