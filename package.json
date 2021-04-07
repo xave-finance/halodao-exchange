@@ -1,0 +1,22 @@
+{
+  "name": "halodao-exchange",
+  "version": "1.0.0",
+  "description": "### Initialize related submodules ``` > git clone git@github.com:HaloDAO/halodao-exchange.git > cd halodao-exchange > git checkout develop ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd halodao-interface && yarn start",
+    "install-interface": "cd ./halodao-interface && yarn install",
+    "install-rewards": "cd ./halodao-rewards && npm install",
+    "test-rewards": "cd ./halodao-rewards && npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaloDAO/halodao-exchange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaloDAO/halodao-exchange/issues"
+  },
+  "homepage": "https://github.com/HaloDAO/halodao-exchange#readme"
+}

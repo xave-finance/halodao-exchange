@@ -32,6 +32,17 @@ Note that git will pull the submodules from the branches specified in .gitmodule
 ## Submodule documentations
 ### HaloDAO Rewards Smart Contract
 [README.md](https://github.com/HaloDAO/halo-rewards/blob/develop/README.md)
+Run rewards from the root directory
+```
+> yarn install-rewards
+> yarn test-rewards
+```
 
 ### HaloDAO Interface
 [README.md](https://github.com/HaloDAO/halodao-interface/blob/develop/README.md)
+
+Run interface from the root directory
+```
+> yarn install-interface
+> yarn start
+```
