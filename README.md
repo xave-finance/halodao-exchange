@@ -29,6 +29,7 @@ To update or fetch all submodules
 *Note that git will pull the submodules from the branches specified in .gitmodules*
 
 **To prevent from accidentally pushing directly to the upstream repo, run the following**
+
 **PLEASE NOTE THAT `submodule set-url` WILL ONLY WORK ON Git 2.25 and up**
 https://stackoverflow.com/a/59364554
 ```
