@@ -31,7 +31,7 @@ To update or fetch all submodules
 **To prevent from accidentally pushing directly to the upstream repo, run the following**
 ```
 > chmod +x ./git-remote.sh
-> ./git-remote.sh [your forked halodao-interface url] [your forked halodao-rewards url]
+> ./git-remote.sh<space>[your forked halodao-interface url]<space>[your forked halodao-rewards url]
 ```
 `git-remote.sh` script will setup your submodules origin and upstream remote urls
 
