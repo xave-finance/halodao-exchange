@@ -1,6 +1,6 @@
 # HaloDAO Exchange
 
-### Initializing related submodules
+### Initialize related submodules
 ```
 > git clone git@github.com:HaloDAO/halodao-exchange.git
 > cd halodao-exchange
@@ -19,7 +19,7 @@ This won't do anything yet except register tha paths of the submodules
 
 To update or fetch a specific submodule
 ```
-> git submodule update --remote [reponame]
+> git submodule update --remote [submodule name]
 ```
 
 To update or fetch all submodules
