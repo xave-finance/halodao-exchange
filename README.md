@@ -28,6 +28,7 @@ To update or fetch all submodules
 ```
 *Note that git will pull the submodules from the branches specified in .gitmodules*
 
+### Shell script is OPTIONAL, only if you fork the submodules
 **To prevent from accidentally pushing directly to the upstream repo, run the following**
 ```
 > chmod +x ./git-remote-setup.sh
