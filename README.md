@@ -32,7 +32,7 @@ To update or fetch all submodules
 **To prevent from accidentally pushing directly to the upstream repo, run the following**
 ```
 > chmod +x ./git-remote-setup.sh
-> ./git-remote-setup.sh<space>[your forked halodao-interface url]<space>[your forked halodao-rewards url]
+> ./git-remote-setup.sh<space>[your forked halodao-interface url]<space>[your forked halodao-rewards url]<space>[your forked halodao-amm url]
 ```
 `git-remote-setup.sh` script will setup your submodules origin and upstream remote urls
 
@@ -44,6 +44,14 @@ Run rewards from the root directory
 ```
 > yarn install-rewards
 > yarn test-rewards
+```
+
+### HaloDAO AMM
+[README.md](https://github.com/HaloDAO/dfx-protocol-clone/blob/dev/README.md)
+
+Run tests from the root directory
+```
+> yarn test
 ```
 
 ### HaloDAO Interface
