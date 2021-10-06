@@ -51,7 +51,8 @@ Run rewards from the root directory
 
 Run tests from the root directory
 ```
-> yarn test
+> yarn install-amm
+> yarn test-amm
 ```
 
 ### HaloDAO Interface
