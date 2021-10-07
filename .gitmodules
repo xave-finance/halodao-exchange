@@ -9,4 +9,4 @@
 [submodule "halodao-amm"]
 	path = halodao-amm
 	url = git@github.com:HaloDAO/dfx-protocol-clone.git
-	branch = dev
+	branch = develop

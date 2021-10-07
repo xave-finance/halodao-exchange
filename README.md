@@ -47,7 +47,7 @@ Run rewards from the root directory
 ```
 
 ### HaloDAO AMM
-[README.md](https://github.com/HaloDAO/dfx-protocol-clone/blob/dev/README.md)
+[README.md](https://github.com/HaloDAO/dfx-protocol-clone/blob/develop/README.md)
 
 Run tests from the root directory
 ```

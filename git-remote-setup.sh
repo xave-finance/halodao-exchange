@@ -15,4 +15,4 @@ git checkout develop
 cd ../halodao-amm
 git remote add upstream git@github.com:HaloDAO/dfx-protocol-clone.git
 git remote set-url origin $3
-git checkout dev
+git checkout develop
