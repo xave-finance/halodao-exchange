@@ -1,34 +1,47 @@
 # HaloDAO Exchange
 
-### Initialize related submodules
+## Quick Start
+
+To quickly get started and pull all the codes, simply run the following cmds:
+
 ```
 > git clone git@github.com:HaloDAO/halodao-exchange.git
 > cd halodao-exchange
 > git checkout develop
-```
-
-You will see .gitmodules and empty directories of the submodules
-
-To initiate the submodules
-```
 > git submodule init
+> git submodule update --remote
 ```
-This won't do anything yet except register tha paths of the submodules
 
-### Update or fetch submodule files
+Contracts are already deployed to testnets and mainnets, so you can just run the frontend app locally, grab the `.env` from 1password and it should work without additional setup or config changes.
 
-To update or fetch a specific submodule
+Refer to this link for the deployed contract addresses:
+
+https://halodao.atlassian.net/wiki/spaces/HALODAO/pages/1048659/Contract+Addresses
+
+## Submodules
+
+| Submodule | Description | Repo
+| --- | --- | --- |
+| halodaodao-rewards | Rewards+Vesting contracts, RewardsManager, Protocol Token (RNBW) | https://github.com/HaloDAO/halo-rewards |
+| halodaodao-amm | AMM contracts (Curves, Zap, Routers, Assimilators, etc) | https://github.com/HaloDAO/amm-v1 |
+| halodaodao-interface | Main frontend app | https://github.com/HaloDAO/halodao-interface |
+
+## Updating submodules
+
+To update all submodules
+```
+> git submodule update --remote
+```
+
+To update a specific submodule
 ```
 > git submodule update --remote [submodule name]
 ```
 
-To update or fetch all submodules
-```
-> git submodule update --remote
-```
 *Note that git will pull the submodules from the branches specified in .gitmodules*
 
-### Shell script is OPTIONAL, only if you fork the submodules
+## (Optional) "Forking" workflow
+
 **To prevent from accidentally pushing directly to the upstream repo, run the following**
 ```
 > chmod +x ./git-remote-setup.sh
@@ -36,30 +49,12 @@ To update or fetch all submodules
 ```
 `git-remote-setup.sh` script will setup your submodules origin and upstream remote urls
 
-## Submodule documentations
-### HaloDAO Rewards Smart Contract
-[README.md](https://github.com/HaloDAO/halo-rewards/blob/develop/README.md)
+## Documentations
 
-Run rewards from the root directory
-```
-> yarn install-rewards
-> yarn test-rewards
-```
-
-### HaloDAO AMM
-[README.md](https://github.com/HaloDAO/dfx-protocol-clone/blob/develop/README.md)
-
-Run tests from the root directory
-```
-> yarn install-amm
-> yarn test-amm
-```
-
-### HaloDAO Interface
-[README.md](https://github.com/HaloDAO/halodao-interface/blob/develop/README.md)
-
-Run interface from the root directory
-```
-> yarn install-interface
-> yarn start-interface
-```
+| Submodule |  |
+| --------- | ------ |
+| halodaodao-rewards | Overview: https://halodao.atlassian.net/wiki/spaces/HALODAO/pages/655635/Rewards+Vesting |
+|  | Readme: https://github.com/HaloDAO/halo-rewards/blob/develop/README.md |
+| halodaodao-amm | Overview: https://halodao.atlassian.net/wiki/spaces/HALODAO/pages/50790410/DFX+Fork |
+|  | Readme: https://github.com/HaloDAO/amm-v1/blob/develop/README.md |
+| halodaodao-interface | Readme: https://github.com/HaloDAO/halodao-interface/blob/develop/README.md |
